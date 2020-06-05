@@ -51,7 +51,7 @@ public class CalculatorTest extends Mockito{
         assertTrue("Expecting Subtraction but not found",stringWriter.toString().contains("Subtraction"));
     }
 
-    @Test
+   // @Test
     public void testMulServlet() throws Exception {
         HttpServletRequest request = mock(HttpServletRequest.class);       
         HttpServletResponse response = mock(HttpServletResponse.class);    
@@ -72,7 +72,7 @@ public class CalculatorTest extends Mockito{
         assertTrue("Expecting Multiplication but not found",stringWriter.toString().contains("Multiplication"));
     }
     
-    @Test
+    //@Test
     public void testDivServlet() throws Exception {
         HttpServletRequest request = mock(HttpServletRequest.class);       
         HttpServletResponse response = mock(HttpServletResponse.class);    
@@ -111,8 +111,8 @@ public class CalculatorTest extends Mockito{
     @Test
     public void testAdd() throws Exception {
 
-        int k= new Calculator().add(8,6);
-        assertEquals("Problem with Add function:", 14, k);
+        int k= new Calculator().add(9,7);
+        assertEquals("Problem with Add function:", 16, k);
         
     }
     @Test
