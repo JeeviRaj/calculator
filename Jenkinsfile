@@ -7,6 +7,11 @@ pipeline
         sh 'mvn clean compile '
       }
     }
+stage('Code Review') {
+      steps{
+        sh 'mvn clean pmd:pmd'
+      }
+    }
 }
 }
 
