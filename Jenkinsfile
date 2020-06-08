@@ -1,6 +1,6 @@
 pipeline
 {
-  agent 
+  agent { label 'worker' }
   stages {
     stage('Compile') {
       steps{
