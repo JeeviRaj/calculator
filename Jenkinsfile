@@ -19,7 +19,7 @@ stage('Code Review') {
     }
  stage('Code Coverage') {
       steps{
-        sh 'mvn clean cobertura:check
+        sh 'mvn clean cobertura:check'
       }
     }
 
