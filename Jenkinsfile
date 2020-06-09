@@ -22,6 +22,11 @@ stage('Code Review') {
         sh 'mvn clean cobertura:check'
       }
     }
+ stage('Install') {
+      steps{
+        sh 'mvn clean install'
+      }
+    }
 
 }
 }
