@@ -17,6 +17,11 @@ stage('Code Review') {
         sh 'mvn clean test'
       }
     }
+ stage('Code Coverage') {
+      steps{
+        sh 'mvn clean cobertura:check
+      }
+    }
 
 }
 }
