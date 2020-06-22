@@ -1,3 +1,3 @@
-FROM pbeniwal/tomcat
+FROM jeeviraj/tomcat
 
-COPY helloedureka.war /usr/local/tomcat/webapps/
+COPY target/calculator.war /usr/local/tomcat/webapps/
