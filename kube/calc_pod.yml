@@ -4,9 +4,9 @@ metadata:
    name: calc-pod
    labels:
      app: web
-   spec:
-   containers:
+spec:
+  containers:
    - name: calc-cont
      image: jeeviraj/calculator
      ports:
-       - containerPort: 8080
+     - containerPort: 8080
