@@ -7,15 +7,15 @@ spec:
    strategy:
       type: RollingUpdate 
       selector: 
-      matchLabels: 
-      app: calc
-   template:
-      metadata:
-   labels:
-      app: calc
-spec:
-   containers:
-   - name: calc-cont
-     image: jeeviraj/calculator
-     ports:
-     - containerPort: 8080
+        matchLabels: 
+          app: calc
+      template:
+        metadata:
+          labels:
+          app: calc
+      spec:
+        containers:
+        - name: calc-cont
+          image: jeeviraj/calculator
+          ports:
+          - containerPort: 8080
