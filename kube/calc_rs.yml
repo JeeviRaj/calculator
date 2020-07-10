@@ -5,16 +5,16 @@ metadata:
 spec:
    replicas: 4 
    selector: 
-   matchLabels: 
-   app: calc
-template:
- metadata:
-   name: calc-pod
-   labels:
-     app: calc
- spec:
-   containers:
-   - name: calc-cont
-     image: jeeviraj/calculator
-     ports:
-     - containerPort: 8080
+     matchLabels: 
+       app: calc
+   template:
+     metadata:
+       name: calc-pod
+       labels:
+         app: calc
+     spec:
+       containers:
+       - name: calc-cont
+         image: jeeviraj/calculator
+         ports:
+         - containerPort: 8080
